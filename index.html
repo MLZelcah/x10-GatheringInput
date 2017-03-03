@@ -6,7 +6,7 @@
   <script>
   function getName() {
     var fullName;
-    fullName = document.getElementById("first").value;
+    fullName = document.getElementById("first").value + "&nbsp" + document.getElementById("last").value;
     document.getElementById("message").innerHTML = fullName;
   }
   </script>
@@ -14,7 +14,7 @@
 <body>
   <form>
   First: <input type="text" id="first"><br>
-  Last : <input type="text" name="last"><br>
+  Last : <input type="text" id="last"><br>
   <button id="doneButton" type="button" onclick="getName();">Done</button>
   <p id="message">
   </p>
