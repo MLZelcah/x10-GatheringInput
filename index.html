@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Gathering Input</title>
+  <script>
+  function getName() {
+    var FullName;
+    fullName = document.GetElementById("first").value;
+    document.GetElementById("message").innerhtml=FullName;
+  }
+  </script>
 </head>
 <body>
-  first: <input type="text" name="first"><br>
-  last : <input type="text" name="last"><br>
+  First: <input type="text" name="first"><br>
+  Last : <input type="text" name="last"><br>
   <button id="doneButton" type="button" onclick="getName();">Done</button>
   <p id="message">
+  </p>
 </body>
 </html>
